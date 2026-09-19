@@ -1,0 +1,476 @@
+{
+  "kind": "Program",
+  "pos": [
+    2,
+    1
+  ],
+  "functions": [
+    {
+      "kind": "Function",
+      "pos": [
+        2,
+        1
+      ],
+      "name": "sum_to",
+      "type": "int",
+      "params": [
+        {
+          "kind": "Param",
+          "pos": [
+            2,
+            12
+          ],
+          "name": "n",
+          "type": "int"
+        }
+      ],
+      "body": {
+        "kind": "Block",
+        "pos": [
+          2,
+          19
+        ],
+        "body": [
+          {
+            "kind": "VarDecl",
+            "pos": [
+              3,
+              5
+            ],
+            "name": "total",
+            "type": "int",
+            "expr": {
+              "kind": "Literal",
+              "pos": [
+                3,
+                17
+              ],
+              "value": "0",
+              "type": "int"
+            }
+          },
+          {
+            "kind": "VarDecl",
+            "pos": [
+              4,
+              5
+            ],
+            "name": "i",
+            "type": "int",
+            "expr": {
+              "kind": "Literal",
+              "pos": [
+                4,
+                13
+              ],
+              "value": "1",
+              "type": "int"
+            }
+          },
+          {
+            "kind": "While",
+            "pos": [
+              7,
+              5
+            ],
+            "cond": {
+              "kind": "Binary",
+              "pos": [
+                7,
+                12
+              ],
+              "op": "<=",
+              "left": {
+                "kind": "Name",
+                "pos": [
+                  7,
+                  12
+                ],
+                "name": "i"
+              },
+              "right": {
+                "kind": "Name",
+                "pos": [
+                  7,
+                  17
+                ],
+                "name": "n"
+              }
+            },
+            "body": {
+              "kind": "Block",
+              "pos": [
+                7,
+                20
+              ],
+              "body": [
+                {
+                  "kind": "Assign",
+                  "pos": [
+                    8,
+                    9
+                  ],
+                  "name": "total",
+                  "expr": {
+                    "kind": "Binary",
+                    "pos": [
+                      8,
+                      17
+                    ],
+                    "op": "+",
+                    "left": {
+                      "kind": "Name",
+                      "pos": [
+                        8,
+                        17
+                      ],
+                      "name": "total"
+                    },
+                    "right": {
+                      "kind": "Name",
+                      "pos": [
+                        8,
+                        25
+                      ],
+                      "name": "i"
+                    }
+                  }
+                },
+                {
+                  "kind": "Assign",
+                  "pos": [
+                    9,
+                    9
+                  ],
+                  "name": "i",
+                  "expr": {
+                    "kind": "Binary",
+                    "pos": [
+                      9,
+                      13
+                    ],
+                    "op": "+",
+                    "left": {
+                      "kind": "Name",
+                      "pos": [
+                        9,
+                        13
+                      ],
+                      "name": "i"
+                    },
+                    "right": {
+                      "kind": "Literal",
+                      "pos": [
+                        9,
+                        17
+                      ],
+                      "value": "1",
+                      "type": "int"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "kind": "Return",
+            "pos": [
+              11,
+              5
+            ],
+            "expr": {
+              "kind": "Name",
+              "pos": [
+                11,
+                12
+              ],
+              "name": "total"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "Function",
+      "pos": [
+        14,
+        1
+      ],
+      "name": "main",
+      "type": "int",
+      "params": [],
+      "body": {
+        "kind": "Block",
+        "pos": [
+          14,
+          12
+        ],
+        "body": [
+          {
+            "kind": "VarDecl",
+            "pos": [
+              15,
+              5
+            ],
+            "name": "limit",
+            "type": "int",
+            "expr": {
+              "kind": "Literal",
+              "pos": [
+                15,
+                17
+              ],
+              "value": "3",
+              "type": "int"
+            }
+          },
+          {
+            "kind": "VarDecl",
+            "pos": [
+              16,
+              5
+            ],
+            "name": "scale",
+            "type": "double",
+            "expr": {
+              "kind": "Literal",
+              "pos": [
+                16,
+                20
+              ],
+              "value": "1.5",
+              "type": "double"
+            }
+          },
+          {
+            "kind": "VarDecl",
+            "pos": [
+              17,
+              5
+            ],
+            "name": "enabled",
+            "type": "bool",
+            "expr": {
+              "kind": "Literal",
+              "pos": [
+                17,
+                20
+              ],
+              "value": "true",
+              "type": "bool"
+            }
+          },
+          {
+            "kind": "VarDecl",
+            "pos": [
+              18,
+              5
+            ],
+            "name": "label",
+            "type": "string",
+            "expr": {
+              "kind": "Literal",
+              "pos": [
+                18,
+                25
+              ],
+              "value": "\"sum // value\"",
+              "type": "string"
+            }
+          },
+          {
+            "kind": "VarDecl",
+            "pos": [
+              19,
+              5
+            ],
+            "name": "result",
+            "type": "int",
+            "expr": {
+              "kind": "Call",
+              "pos": [
+                19,
+                18
+              ],
+              "name": "sum_to",
+              "args": [
+                {
+                  "kind": "Name",
+                  "pos": [
+                    19,
+                    25
+                  ],
+                  "name": "limit"
+                }
+              ]
+            }
+          },
+          {
+            "kind": "VarDecl",
+            "pos": [
+              20,
+              5
+            ],
+            "name": "weighted",
+            "type": "double",
+            "expr": {
+              "kind": "Binary",
+              "pos": [
+                20,
+                23
+              ],
+              "op": "*",
+              "left": {
+                "kind": "Name",
+                "pos": [
+                  20,
+                  23
+                ],
+                "name": "result"
+              },
+              "right": {
+                "kind": "Name",
+                "pos": [
+                  20,
+                  32
+                ],
+                "name": "scale"
+              }
+            }
+          },
+          {
+            "kind": "If",
+            "pos": [
+              21,
+              5
+            ],
+            "cond": {
+              "kind": "Binary",
+              "pos": [
+                21,
+                9
+              ],
+              "op": "&&",
+              "left": {
+                "kind": "Name",
+                "pos": [
+                  21,
+                  9
+                ],
+                "name": "enabled"
+              },
+              "right": {
+                "kind": "Binary",
+                "pos": [
+                  21,
+                  20
+                ],
+                "op": ">",
+                "left": {
+                  "kind": "Name",
+                  "pos": [
+                    21,
+                    20
+                  ],
+                  "name": "result"
+                },
+                "right": {
+                  "kind": "Literal",
+                  "pos": [
+                    21,
+                    29
+                  ],
+                  "value": "0",
+                  "type": "int"
+                }
+              }
+            },
+            "yes": {
+              "kind": "Block",
+              "pos": [
+                21,
+                32
+              ],
+              "body": [
+                {
+                  "kind": "Assign",
+                  "pos": [
+                    22,
+                    9
+                  ],
+                  "name": "result",
+                  "expr": {
+                    "kind": "Binary",
+                    "pos": [
+                      22,
+                      18
+                    ],
+                    "op": "+",
+                    "left": {
+                      "kind": "Name",
+                      "pos": [
+                        22,
+                        18
+                      ],
+                      "name": "result"
+                    },
+                    "right": {
+                      "kind": "Literal",
+                      "pos": [
+                        22,
+                        27
+                      ],
+                      "value": "2",
+                      "type": "int"
+                    }
+                  }
+                }
+              ]
+            },
+            "no": {
+              "kind": "Block",
+              "pos": [
+                23,
+                12
+              ],
+              "body": [
+                {
+                  "kind": "Assign",
+                  "pos": [
+                    24,
+                    9
+                  ],
+                  "name": "result",
+                  "expr": {
+                    "kind": "Literal",
+                    "pos": [
+                      24,
+                      18
+                    ],
+                    "value": "0",
+                    "type": "int"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "kind": "Return",
+            "pos": [
+              26,
+              5
+            ],
+            "expr": {
+              "kind": "Name",
+              "pos": [
+                26,
+                12
+              ],
+              "name": "result"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
