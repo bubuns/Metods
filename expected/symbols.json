@@ -1,0 +1,112 @@
+[
+  {
+    "name": "sum_to",
+    "type": "int",
+    "uid": "sum_to",
+    "scope": "global",
+    "depth": 0,
+    "line": 2,
+    "kind": "function",
+    "initialized": true
+  },
+  {
+    "name": "n",
+    "type": "int",
+    "uid": "sum_to/n@2:12",
+    "scope": "sum_to",
+    "depth": 1,
+    "line": 2,
+    "kind": "param",
+    "initialized": true
+  },
+  {
+    "name": "total",
+    "type": "int",
+    "uid": "sum_to/total@3:5",
+    "scope": "sum_to",
+    "depth": 1,
+    "line": 3,
+    "kind": "variable",
+    "initialized": true
+  },
+  {
+    "name": "i",
+    "type": "int",
+    "uid": "sum_to/i@4:5",
+    "scope": "sum_to",
+    "depth": 1,
+    "line": 4,
+    "kind": "variable",
+    "initialized": true
+  },
+  {
+    "name": "main",
+    "type": "int",
+    "uid": "main",
+    "scope": "global",
+    "depth": 0,
+    "line": 14,
+    "kind": "function",
+    "initialized": true
+  },
+  {
+    "name": "limit",
+    "type": "int",
+    "uid": "main/limit@15:5",
+    "scope": "main",
+    "depth": 1,
+    "line": 15,
+    "kind": "variable",
+    "initialized": true
+  },
+  {
+    "name": "scale",
+    "type": "double",
+    "uid": "main/scale@16:5",
+    "scope": "main",
+    "depth": 1,
+    "line": 16,
+    "kind": "variable",
+    "initialized": true
+  },
+  {
+    "name": "enabled",
+    "type": "bool",
+    "uid": "main/enabled@17:5",
+    "scope": "main",
+    "depth": 1,
+    "line": 17,
+    "kind": "variable",
+    "initialized": true
+  },
+  {
+    "name": "label",
+    "type": "string",
+    "uid": "main/label@18:5",
+    "scope": "main",
+    "depth": 1,
+    "line": 18,
+    "kind": "variable",
+    "initialized": true
+  },
+  {
+    "name": "result",
+    "type": "int",
+    "uid": "main/result@19:5",
+    "scope": "main",
+    "depth": 1,
+    "line": 19,
+    "kind": "variable",
+    "initialized": true
+  },
+  {
+    "name": "weighted",
+    "type": "double",
+    "uid": "main/weighted@20:5",
+    "scope": "main",
+    "depth": 1,
+    "line": 20,
+    "kind": "variable",
+    "initialized": true
+  }
+]

@@ -1,0 +1,458 @@
+[
+  {
+    "id": "case_01",
+    "name": "Полный конвейер",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_01.cpp"
+  },
+  {
+    "id": "case_02",
+    "name": "Незакрытый комментарий",
+    "stage": "pre",
+    "error": "PREPROCESS",
+    "clean": null,
+    "file": "fixtures/case_02.cpp"
+  },
+  {
+    "id": "case_03",
+    "name": "Управляющий символ",
+    "stage": "pre",
+    "error": "PREPROCESS",
+    "clean": null,
+    "file": "fixtures/case_03.cpp"
+  },
+  {
+    "id": "case_04",
+    "name": "Недопустимый символ",
+    "stage": "all",
+    "error": "LEXICAL",
+    "clean": null,
+    "file": "fixtures/case_04.cpp"
+  },
+  {
+    "id": "case_05",
+    "name": "Две точки",
+    "stage": "all",
+    "error": "LEXICAL",
+    "clean": null,
+    "file": "fixtures/case_05.cpp"
+  },
+  {
+    "id": "case_06",
+    "name": "Буквы в числе",
+    "stage": "all",
+    "error": "LEXICAL",
+    "clean": null,
+    "file": "fixtures/case_06.cpp"
+  },
+  {
+    "id": "case_07",
+    "name": "Имя с цифры",
+    "stage": "all",
+    "error": "LEXICAL",
+    "clean": null,
+    "file": "fixtures/case_07.cpp"
+  },
+  {
+    "id": "case_08",
+    "name": "Незакрытая строка",
+    "stage": "all",
+    "error": "LEXICAL",
+    "clean": null,
+    "file": "fixtures/case_08.cpp"
+  },
+  {
+    "id": "case_09",
+    "name": "Неизвестный оператор",
+    "stage": "all",
+    "error": "LEXICAL",
+    "clean": null,
+    "file": "fixtures/case_09.cpp"
+  },
+  {
+    "id": "case_10",
+    "name": "Нет точки с запятой",
+    "stage": "all",
+    "error": "SYNTAX",
+    "clean": null,
+    "file": "fixtures/case_10.cpp"
+  },
+  {
+    "id": "case_11",
+    "name": "Нет фигурной скобки",
+    "stage": "all",
+    "error": "SYNTAX",
+    "clean": null,
+    "file": "fixtures/case_11.cpp"
+  },
+  {
+    "id": "case_12",
+    "name": "Нет круглой скобки",
+    "stage": "all",
+    "error": "SYNTAX",
+    "clean": null,
+    "file": "fixtures/case_12.cpp"
+  },
+  {
+    "id": "case_13",
+    "name": "Ключевое слово вместо имени",
+    "stage": "all",
+    "error": "SYNTAX",
+    "clean": null,
+    "file": "fixtures/case_13.cpp"
+  },
+  {
+    "id": "case_14",
+    "name": "Лишний разделитель",
+    "stage": "all",
+    "error": "SYNTAX",
+    "clean": null,
+    "file": "fixtures/case_14.cpp"
+  },
+  {
+    "id": "case_15",
+    "name": "Необъявленная переменная",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_15.cpp"
+  },
+  {
+    "id": "case_16",
+    "name": "Повторное объявление",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_16.cpp"
+  },
+  {
+    "id": "case_17",
+    "name": "Несовместимость типов",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_17.cpp"
+  },
+  {
+    "id": "case_18",
+    "name": "Нет инициализации",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_18.cpp"
+  },
+  {
+    "id": "case_19",
+    "name": "Одна ветвь инициализирует",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_19.cpp"
+  },
+  {
+    "id": "case_20",
+    "name": "Только цикл инициализирует",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_20.cpp"
+  },
+  {
+    "id": "case_21",
+    "name": "Аргументов мало",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_21.cpp"
+  },
+  {
+    "id": "case_22",
+    "name": "Неверный тип аргумента",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_22.cpp"
+  },
+  {
+    "id": "case_23",
+    "name": "Неверный return",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_23.cpp"
+  },
+  {
+    "id": "case_24",
+    "name": "Нелогическое условие",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_24.cpp"
+  },
+  {
+    "id": "case_25",
+    "name": "Нет main",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_25.cpp"
+  },
+  {
+    "id": "case_26",
+    "name": "Область видимости",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_26.cpp"
+  },
+  {
+    "id": "case_27",
+    "name": "Самоинициализация",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_27.cpp"
+  },
+  {
+    "id": "case_28",
+    "name": "Вызов до объявления",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_28.cpp"
+  },
+  {
+    "id": "case_29",
+    "name": "Переменная вместо функции",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_29.cpp"
+  },
+  {
+    "id": "case_30",
+    "name": "Нет возврата на всех путях",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_30.cpp"
+  },
+  {
+    "id": "case_31",
+    "name": "Обе ветви инициализируют",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_31.cpp"
+  },
+  {
+    "id": "case_32",
+    "name": "Возврат в одной ветви",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_32.cpp"
+  },
+  {
+    "id": "case_33",
+    "name": "Затенение во вложенном блоке",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_33.cpp"
+  },
+  {
+    "id": "case_34",
+    "name": "Расширение int в double",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_34.cpp"
+  },
+  {
+    "id": "case_35",
+    "name": "Приоритет операторов",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_35.cpp"
+  },
+  {
+    "id": "case_36",
+    "name": "Левая ассоциативность",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_36.cpp"
+  },
+  {
+    "id": "case_37",
+    "name": "Короткое замыкание",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_37.cpp"
+  },
+  {
+    "id": "case_38",
+    "name": "Вложенные вызовы",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_38.cpp"
+  },
+  {
+    "id": "case_39",
+    "name": "Очистка без изменения лексем",
+    "stage": "pre",
+    "error": null,
+    "clean": "int x = 1;\n",
+    "file": "fixtures/case_39.cpp"
+  },
+  {
+    "id": "case_40",
+    "name": "Очистка без изменения лексем",
+    "stage": "pre",
+    "error": null,
+    "clean": "int x;\n",
+    "file": "fixtures/case_40.cpp"
+  },
+  {
+    "id": "case_41",
+    "name": "Очистка без изменения лексем",
+    "stage": "pre",
+    "error": null,
+    "clean": "int x;\n",
+    "file": "fixtures/case_41.cpp"
+  },
+  {
+    "id": "case_42",
+    "name": "Очистка без изменения лексем",
+    "stage": "pre",
+    "error": null,
+    "clean": "const char* s=\"http://x /* y */  z\";\n",
+    "file": "fixtures/case_42.cpp"
+  },
+  {
+    "id": "case_43",
+    "name": "Координаты исходного текста",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_43.cpp"
+  },
+  {
+    "id": "case_44",
+    "name": "Две функции с одним именем",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_44.cpp"
+  },
+  {
+    "id": "case_45",
+    "name": "Повтор параметра",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_45.cpp"
+  },
+  {
+    "id": "case_46",
+    "name": "Параметр и локальное имя",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_46.cpp"
+  },
+  {
+    "id": "case_47",
+    "name": "Оператор после return",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_47.cpp"
+  },
+  {
+    "id": "case_48",
+    "name": "Нелогический операнд",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_48.cpp"
+  },
+  {
+    "id": "case_49",
+    "name": "Недопустимая escape последовательность",
+    "stage": "all",
+    "error": "LEXICAL",
+    "clean": null,
+    "file": "fixtures/case_49.cpp"
+  },
+  {
+    "id": "case_50",
+    "name": "Пустой исходный файл",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_50.cpp"
+  },
+  {
+    "id": "case_51",
+    "name": "Недостаток выражения",
+    "stage": "all",
+    "error": "SYNTAX",
+    "clean": null,
+    "file": "fixtures/case_51.cpp"
+  },
+  {
+    "id": "case_52",
+    "name": "Отсутствие имени функции",
+    "stage": "all",
+    "error": "SYNTAX",
+    "clean": null,
+    "file": "fixtures/case_52.cpp"
+  },
+  {
+    "id": "case_53",
+    "name": "Присваивание необъявленной переменной",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_53.cpp"
+  },
+  {
+    "id": "case_54",
+    "name": "Необъявленная функция",
+    "stage": "all",
+    "error": "SEMANTIC",
+    "clean": null,
+    "file": "fixtures/case_54.cpp"
+  },
+  {
+    "id": "case_55",
+    "name": "CRLF и карта строк",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_55.cpp"
+  },
+  {
+    "id": "case_56",
+    "name": "Запятая и два аргумента",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_56.cpp"
+  },
+  {
+    "id": "case_57",
+    "name": "Экранированные кавычки",
+    "stage": "all",
+    "error": null,
+    "clean": null,
+    "file": "fixtures/case_57.cpp"
+  }
+]

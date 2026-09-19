@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Основная программа",
+    "source": "// Сумма целых чисел от 1 до n\nint sum_to(int n) {\n    int total = 0;\n    int i = 1;\n    /* Накопление суммы\n       в цикле while */\n    while (i <= n) {\n        total = total + i;\n        i = i + 1;\n    }\n    return total;\n}\n\nint main() {\n    int limit = 3;\n    double scale = 1.5;\n    bool enabled = true;\n    const char* label = \"sum // value\";\n    int result = sum_to(limit);\n    double weighted = result * scale;\n    if (enabled && result > 0) {\n        result = result + 2;\n    } else {\n        result = 0;\n    }\n    return result;\n}\n",
+    "result": 8
+  },
+  {
+    "name": "Приоритет",
+    "source": "int main(){return 2+3*4;}",
+    "result": 14
+  },
+  {
+    "name": "Ассоциативность",
+    "source": "int main(){return 10-3-2;}",
+    "result": 5
+  },
+  {
+    "name": "Короткое И",
+    "source": "int main(){bool x=false && (1/0>0); return 0;}",
+    "result": 0
+  },
+  {
+    "name": "Короткое ИЛИ",
+    "source": "int main(){bool x=true || (1/0>0); return 0;}",
+    "result": 0
+  },
+  {
+    "name": "Вложенные вызовы",
+    "source": "int f(int n){return n+1;} int main(){return f(f(1));}",
+    "result": 3
+  },
+  {
+    "name": "Цикл",
+    "source": "int main(){int n=0; while(n<3){n=n+1;} return n;}",
+    "result": 3
+  },
+  {
+    "name": "Два вложенных аргумента",
+    "source": "int f(int x){return x+1;} int add(int a,int b){return a+b;} int main(){return add(f(1),f(2));}",
+    "result": 5
+  },
+  {
+    "name": "Рекурсия",
+    "source": "int f(int n){if(n<=1){return 1;}else{return n*f(n-1);}} int main(){return f(5);}",
+    "result": 120
+  },
+  {
+    "name": "Вещественное сравнение",
+    "source": "int main(){double x=3; if(x/2.0>1.4){return 1;}else{return 0;}}",
+    "result": 1
+  },
+  {
+    "name": "Отрицательное деление",
+    "source": "int main(){return -7/2+4;}",
+    "result": 1
+  }
+]

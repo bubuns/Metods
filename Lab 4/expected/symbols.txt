@@ -1,0 +1,13 @@
+NAME     | TYPE   | SCOPE  | LINE | KIND     | INIT
+---------+--------+--------+------+----------+-----
+sum_to   | int    | global | 2    | function | True
+n        | int    | sum_to | 2    | param    | True
+total    | int    | sum_to | 3    | variable | True
+i        | int    | sum_to | 4    | variable | True
+main     | int    | global | 14   | function | True
+limit    | int    | main   | 15   | variable | True
+scale    | double | main   | 16   | variable | True
+enabled  | bool   | main   | 17   | variable | True
+label    | string | main   | 18   | variable | True
+result   | int    | main   | 19   | variable | True
+weighted | double | main   | 20   | variable | True

@@ -1,0 +1,1 @@
+int f(int n){return n+1;} int main(){return f(f(1));}

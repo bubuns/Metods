@@ -1,0 +1,1 @@
+const char* s="http://x /* y */  z";

@@ -1,0 +1,1 @@
+int main(){const char* x="a\q"; return 0;}

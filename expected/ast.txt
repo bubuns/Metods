@@ -1,0 +1,65 @@
+Program
+  functions:
+    Function name=sum_to, type=int
+      params:
+        Param name=n, type=int
+      body: Block
+          body:
+            VarDecl name=total, type=int
+              expr: Literal type=int, value=0
+            VarDecl name=i, type=int
+              expr: Literal type=int, value=1
+            While
+              cond: Binary op=<=
+                  left: Name name=i
+                  right: Name name=n
+              body: Block
+                  body:
+                    Assign name=total
+                      expr: Binary op=+
+                          left: Name name=total
+                          right: Name name=i
+                    Assign name=i
+                      expr: Binary op=+
+                          left: Name name=i
+                          right: Literal type=int, value=1
+            Return
+              expr: Name name=total
+    Function name=main, type=int
+      params:
+      body: Block
+          body:
+            VarDecl name=limit, type=int
+              expr: Literal type=int, value=3
+            VarDecl name=scale, type=double
+              expr: Literal type=double, value=1.5
+            VarDecl name=enabled, type=bool
+              expr: Literal type=bool, value=true
+            VarDecl name=label, type=string
+              expr: Literal type=string, value="sum // value"
+            VarDecl name=result, type=int
+              expr: Call name=sum_to
+                  args:
+                    Name name=limit
+            VarDecl name=weighted, type=double
+              expr: Binary op=*
+                  left: Name name=result
+                  right: Name name=scale
+            If
+              cond: Binary op=&&
+                  left: Name name=enabled
+                  right: Binary op=>
+                      left: Name name=result
+                      right: Literal type=int, value=0
+              yes: Block
+                  body:
+                    Assign name=result
+                      expr: Binary op=+
+                          left: Name name=result
+                          right: Literal type=int, value=2
+              no: Block
+                  body:
+                    Assign name=result
+                      expr: Literal type=int, value=0
+            Return
+              expr: Name name=result

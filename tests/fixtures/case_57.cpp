@@ -1,0 +1,1 @@
+int main(){const char* s="a\" // b"; return 0;}

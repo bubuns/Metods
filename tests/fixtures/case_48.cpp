@@ -1,0 +1,1 @@
+int main(){bool x=true && 2; return 0;}
